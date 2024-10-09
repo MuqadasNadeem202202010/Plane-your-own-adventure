@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="destinations.css"> <!-- Link to the stylesheet -->
+</head>
+<body>
+    <div class="button-container">
+        <ul>
+            <li><a href="index.html" class="button">Home</a></li>
+            <li><a href="destinations.html" class="button">Destinations</a></li>
+            <li><a href="about.html" class="button">About Us</a></li>
+            <li><a href="packages.html" class="button">Packages</a></li>
+            <li><a href="contact.html" class="button">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="destinations">
+        <h1 class="heading">Explore Our Destinations</h1>
+
+        <!-- Destination 1 -->
+        <div class="destination">
+            <img src="img.png1.avif" alt="Hunza Valley" class="destination-image">
+            <div class="destination-info">
+                <h2>Hunza Valley</h2>
+                <p>Nestled in the Gilgit-Baltistan region, Hunza Valley is renowned for its stunning mountain landscapes, terraced fields, and rich cultural heritage. It is a paradise for nature lovers and adventure seekers alike.</p>
+                <a href="#" class="learn-more" onclick="toggleInfo('info1')">Learn More</a>
+                <div id="info1" class="more-info" style="display: none;">
+                    <p><strong>Attractions:</strong></p>
+                    <ul>
+                        <li>Karimabad: The capital of Hunza, famous for its historical sites, including Baltit and Altit forts.</li>
+                        <li>Passu Cones: Iconic peaks that are a photographer’s delight.</li>
+                        <li>Attabad Lake: A mesmerizing turquoise lake formed due to a landslide in 2010.</li>
+                    </ul>
+                    <p><strong>Activities:</strong> Trekking, boating, and exploring local culture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 2 -->
+        <div class="destination">
+            <img src="img.png2.jpg"  alt="Neelum Valley" class="destination-image">
+            <div class="destination-info">
+                <h2>Neelum Valley</h2>
+                <p>Located in Azad Kashmir, Neelum Valley is famous for its lush greenery, flowing rivers, and picturesque mountains. It offers a serene escape for travelers looking for tranquility and natural beauty.</p>
+                <a href="#" class="learn-more" onclick="toggleInfo('info2')">Learn More</a>
+                <div id="info2" class="more-info" style="display: none;">
+                    <p><strong>Attractions:</strong></p>
+                    <ul>
+                        <li>Sharda: Known for its ancient university ruins and stunning landscapes.</li>
+                        <li>Kel: A charming village that serves as a base for treks to nearby areas.</li>
+                        <li>Leepa Valley: A hidden gem known for its wooden houses and terraced fields.</li>
+                    </ul>
+                    <p><strong>Activities:</strong> Hiking, fishing, and exploring cultural heritage.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 3 -->
+        <div class="destination">
+            <img src="img.png3.jpg" alt="Skardu" class="destination-image">
+            <div class="destination-info">
+                <h2>Skardu</h2>
+                <p>Skardu, located in the Gilgit-Baltistan region, is the gateway to some of the highest peaks in the world, including K2. It is known for its breathtaking landscapes, clear lakes, and rich cultural history.</p>
+                <a href="#" class="learn-more" onclick="toggleInfo('info3')">Learn More</a>
+                <div id="info3" class="more-info" style="display: none;">
+                    <p><strong>Attractions:</strong></p>
+                    <ul>
+                        <li>Shangrila Resort: Known as "Heaven on Earth," it offers stunning views of the surrounding mountains and lake.</li>
+                        <li>Kachura Lakes: A set of beautiful lakes perfect for boating and fishing.</li>
+                        <li>Deosai National Park: Famous for its vast plains, rich wildlife, and unique flora.</li>
+                    </ul>
+                    <p><strong>Activities:</strong> Trekking, camping, and sightseeing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 4 -->
+        <div class="destination">
+            <img src="img.png4.jpg" alt="Swat Valley" class="destination-image">
+            <div class="destination-info">
+                <h2>Swat Valley</h2>
+                <p>Often referred to as the "Switzerland of the East," Swat Valley is known for its lush green valleys, clear rivers, and majestic mountains. It is a popular destination for both domestic and international tourists.</p>
+                <a href="#" class="learn-more" onclick="toggleInfo('info4')">Learn More</a>
+                <div id="info4" class="more-info" style="display: none;">
+                    <p><strong>Attractions:</strong></p>
+                    <ul>
+                        <li>Malam Jabba: A ski resort and hill station offering winter sports and hiking.</li>
+                        <li>Mingora and Saidu Sharif: The main towns that provide access to historical sites and local culture.</li>
+                        <li>Kalam Valley: A picturesque valley known for its stunning landscapes and rivers.</li>
+                    </ul>
+                    <p><strong>Activities:</strong> Trekking, skiing, and cultural exploration.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Destination 5 -->
+        <div class="destination">
+            <img src="img.png5.jpg" alt="Murree" class="destination-image">
+            <div class="destination-info">
+                <h2>Murree</h2>
+                <p>Murree is a popular hill station near Islamabad, known for its cool climate, scenic views, and lush pine forests. It is an ideal getaway for families and tourists looking for a quick escape from the heat.</p>
+                <a href="#" class="learn-more" onclick="toggleInfo('info5')">Learn More</a>
+                <div id="info5" class="more-info" style="display: none;">
+                    <p><strong>Attractions:</strong></p>
+                    <ul>
+                        <li>Mall Road: A bustling area filled with shops, restaurants, and cafes.</li>
+                        <li>Pindi Point and Kashmir Point: Viewpoints offering panoramic views of the surrounding hills and valleys.</li>
+                        <li>Patriata (New Murree): Known for its chairlift and cable car rides with breathtaking views.</li>
+                    </ul>
+                    <p><strong>Activities:</strong> Hiking, shopping, and enjoying local cuisine.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            infoDiv.style.display = (infoDiv.style.display === 'none' || infoDiv.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

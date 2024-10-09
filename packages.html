@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages</title>
+    <link rel="stylesheet" href="packages.css"> <!-- Link to the stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="button-container">
+            <ul>
+                <li><a href="index.html" class="button">Home</a></li>
+                <li><a href="destinations.html" class="button">Destinations</a></li>
+                <li><a href="about.html" class="button">About Us</a></li>
+                <li><a href="packages.html" class="button">Packages</a></li>
+                <li><a href="contact.html" class="button">Contact Us</a></li>
+            </ul>
+        </div>
+        <h1 class="heading">Travel Packages</h1>
+    </header>
+
+    <main>
+        <!-- Hunza Valley Adventure Package -->
+        <div class="package">
+            <h2>Hunza Valley Adventure Package</h2>
+            <p>Duration: 5 Days, 4 Nights</p>
+            <p class="price">Price: PKR 85,000 per person</p>
+            <button class="learn-more" onclick="openModal('hunza')">Learn More</button>
+        </div>
+
+        <!-- Neelum Valley Serenity Package -->
+        <div class="package">
+            <h2>Neelum Valley Serenity Package</h2>
+            <p>Duration: 4 Days, 3 Nights</p>
+            <p class="price">Price: PKR 70,000 per person</p>
+            <button class="learn-more" onclick="openModal('neelum')">Learn More</button>
+        </div>
+
+        <!-- Skardu Majestic Peaks Package -->
+        <div class="package">
+            <h2>Skardu Majestic Peaks Package</h2>
+            <p>Duration: 6 Days, 5 Nights</p>
+            <p class="price">Price: PKR 110,000 per person</p>
+            <button class="learn-more" onclick="openModal('skardu')">Learn More</button>
+        </div>
+
+        <!-- Swat Valley Exploration Package -->
+        <div class="package">
+            <h2>Swat Valley Exploration Package</h2>
+            <p>Duration: 5 Days, 4 Nights</p>
+            <p class="price">Price: PKR 75,000 per person</p>
+            <button class="learn-more" onclick="openModal('swat')">Learn More</button>
+        </div>
+
+        <!-- Murree Hill Station Family Package -->
+        <div class="package">
+            <h2>Murree Hill Station Family Package</h2>
+            <p>Duration: 3 Days, 2 Nights</p>
+            <p class="price">Price: PKR 50,000 per person</p>
+            <button class="learn-more" onclick="openModal('murree')">Learn More</button>
+        </div>
+    </main>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+
+    <script src="packages.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/spring-moonsoon-day_1317623-11010.jpg?w=740'); /* Sirf ek image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.button-container {
+    margin-top: 20px; /* Buttons moved up */
+    text-align: center;
+}
+
+.button-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center align items */
+}
+
+.button-container li {
+    margin: 0 15px; /* Space between buttons */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding for bigger button */
+    font-size: 20px; /* Increased font size */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 30px; /* Round shape */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(94, 94, 194); /* Color on hover */
+    transform: translateY(5px); /* Move down on hover */
+}
+
+.button:active {
+    background-color: rgb(94, 94, 194); /* Color on click */
+}
+
+h1 {
+    font-size: 48px; /* Increased font size */
+    margin-top: 80px; /* Moved down */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added shadow for depth */
+}
+
+h2 {
+    font-size: 28px; /* Increased font size */
+    margin: 20px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic; /* Added italic style for uniqueness */
+    background: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+    padding: 15px; /* Added padding */
+    border-radius: 10px; /* Rounded corners */
+}

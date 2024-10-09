@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/premium-photo/spring-moonsoon-day_1317623-11010.jpg?w=740');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.button-container {
+    margin-top: 20px; /* Buttons moved up */
+    text-align: center;
+}
+
+.button-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center align items */
+}
+
+.button-container li {
+    margin: 0 15px; /* Space between buttons */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding for bigger button */
+    font-size: 20px; /* Increased font size */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 30px; /* Round shape */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(117, 117, 35); /* Yellow on hover */
+    transform: translateY(5px); /* Move down on hover */
+}
+
+.button:active {
+    background-color: rgb(117, 117, 35); /* Yellow color on click */
+}
+
+.about-section {
+    max-width: 800px; /* Set a maximum width for the about section */
+    margin: 0 auto; /* Center align the section */
+    padding: 20px; /* Add some padding */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.heading {
+    font-size: 48px; /* Increased font size */
+    margin-top: 20px; /* Moved down */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added shadow for depth */
+}
+
+.about-content {
+    display: flex; /* Flexbox for image and text alignment */
+    align-items: center; /* Center align vertically */
+    margin-top: 20px; /* Space between heading and content */
+}
+
+.about-image {
+    width: 40%; /* Image width */
+    border-radius: 10px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.about-text {
+    text-align: left; /* Align text to the left */
+}
+
+.about-text p {
+    margin: 10px 0; /* Space between paragraphs */
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .about-image {
+        width: 80%; /* Full width for smaller screens */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    .heading {
+        font-size: 36px; /* Smaller heading size on mobile */
+    }
+
+    .button {
+        font-size: 18px; /* Smaller button font size on mobile */
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+
+    .button-container li {
+        margin: 0 5px; /* Reduce space between buttons */
+    }
+}
